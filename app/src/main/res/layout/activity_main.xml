@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/valTemp"
-        android:hint="Choose the temperature"
+        android:hint="@string/et_label"
         android:inputType="numberDecimal"
         />
 
@@ -24,7 +24,7 @@
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Celsius"
+            android:text="@string/rd_label_celsius"
             android:id="@+id/celsiusRadio"
             android:checked="false"
             />
@@ -32,7 +32,7 @@
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Fahrenheit"
+            android:text="@string/rd_label_fahrenheit"
             android:id="@+id/fahrenheitRadio"
             android:checked="true"
             />
@@ -43,7 +43,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/convertButton"
-        android:text="Convert temperature"
+        android:text="@string/bt_convert_temperature"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
         />
 
 </LinearLayout>
